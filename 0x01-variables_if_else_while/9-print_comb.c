@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - prints all possible combinaions of single-digit numbers
@@ -21,6 +19,6 @@ int main(void)
 			putchar(' ');
 		}
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
