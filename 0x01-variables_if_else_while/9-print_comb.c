@@ -10,15 +10,16 @@ int main(void)
 {
 	int n;
 
-	for (n = 58; n < 68; n++)
+	for (n = 48; n < 58; n++)
 	{
 		putchar(n);
-		if (n != 67)
+		if (n != 57)
 		{
 			putchar(',');
 			putchar(' ');
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
