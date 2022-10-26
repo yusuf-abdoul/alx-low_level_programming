@@ -8,16 +8,16 @@
  */
 void print_rev(char *s)
 {
-	char *_s = s;
+	int u = 0;
 
 	/* move the pointer the end of the string */
-	while (*s != '\0')
+	while (s[u] != '\0')
+		u++;
 
 	/* move back in reverse and print */
-	while (s != _s)
-	{
-		s--;
-		_putchar(*s);
-	}
+	for (u = u - 1; u >= 0; u--)
+
+		_putchar(s[u]);
+
 	_putchar('\n');
 }
