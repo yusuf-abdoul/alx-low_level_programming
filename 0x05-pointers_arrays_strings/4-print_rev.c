@@ -12,7 +12,6 @@ void print_rev(char *s)
 
 	/* move the pointer the end of the string */
 	while (*s != '\0')
-		
 
 	/* move back in reverse and print */
 	while (s != _s)
