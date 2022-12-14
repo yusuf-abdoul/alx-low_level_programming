@@ -1,17 +1,16 @@
+
 /**
- * _memset - fills memory with a constant byte
- * @s: memory area pointed
- * @b: constant b
- * @n: first n bytes count
+ * _memcpy - copies memory area
+ * @dest: destination area
+ * @src: source area
+ * @n: number of bytes to copy
  *
- * Return: A pointer to the memory area s
+ * Return: dest
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i = 0;
+	while (n-- > 0)
+		*(dest + n) = *(src + n);
 
-	for (i = 0; i < n; i++)
-		s[i] = b;
-
-	return (s);
+	return (dest);
 }
